@@ -1,0 +1,196 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body styling */
+  body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #6f42c1, #67ee0d);
+    padding: 20px;
+    color: #fff;
+    min-width: 300px;
+    width: 100%;
+  }
+  
+  /* Header */
+  h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Container holding the task form and list */
+  .container {
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    box-sizing: border-box;
+    text-align: center;
+    max-width: 350px;
+    margin: 0 auto;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  input[type="text"],
+  input[type="time"] {
+    padding: 12px 15px;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    transition: all 0.3s ease;
+  }
+  
+  /* Input focus effect */
+  input[type="text"]:focus,
+  input[type="time"]:focus {
+    border-color: #ff6f61;
+    box-shadow: 0 0 10px rgba(255, 111, 97, 0.6);
+  }
+  
+  /* Submit Button Styling */
+  button {
+    padding: 12px 25px;
+    border: none;
+    background: linear-gradient(135deg, #ff6f61, #6f42c1);
+    color: #fff;
+    font-size: 1.1rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(255, 111, 97, 0.6);
+  }
+  
+  button:active {
+    transform: scale(1);
+    box-shadow: none;
+  }
+  
+  /* Task List Styles */
+  ul#task-list {
+    list-style: none;
+    margin-top: 20px;
+    padding: 0;
+    overflow-y: auto;
+    max-height: 250px;
+  }
+  
+  ul#task-list li {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  ul#task-list li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  ul#task-list li .timer {
+    font-size: 0.85rem;
+    color: #ff6f61;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    font-weight: bold;
+  }
+  
+  /* Timer Animation */
+  .timer {
+    animation: pulse 1.5s infinite;
+  }
+  
+  @keyframes pulse {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.7;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  /* 3D Effect for Buttons */
+  button {
+    perspective: 1000px;
+  }
+  
+  button:active {
+    transform: rotateX(10deg) rotateY(10deg);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 480px) {
+    .container {
+      max-width: 100%;
+    }
+    button {
+      font-size: 1rem;
+      padding: 10px 20px;
+    }
+    input[type="text"],
+    input[type="time"] {
+      font-size: 1rem;
+      padding: 10px;
+    }
+  }
+  /* Style for the task completion checkbox */
+label {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #fff;
+    cursor: pointer;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .complete-checkbox {
+    margin-left: 10px;
+    accent-color: #ff6f61;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .complete-checkbox:checked {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(255, 111, 97, 0.7);
+  }
+  
+  /* Focus effect for checkboxes */
+  .complete-checkbox:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(255, 111, 97, 0.6);
+  }
+  /* Add a smooth fade-out effect when tasks are removed */
+.task {
+    transition: opacity 0.3s ease-out;
+  }
+  
+  .task.removed {
+    opacity: 0;
+  }
+  

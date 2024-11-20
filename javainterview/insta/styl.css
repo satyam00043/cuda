@@ -1,0 +1,272 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fafafa;
+    color: #262626;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+  
+  /* Header */
+  header {
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    border-bottom: 1px solid #dbdbdb;
+  }
+  
+  header .logo {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 30px;
+    color: #3897f0;
+    font-weight: bold;
+  }
+  
+  header .nav-icons {
+    display: flex;
+    gap: 20px;
+  }
+  
+  header .nav-icons i {
+    font-size: 20px;
+    cursor: pointer;
+    color: #262626;
+  }
+  
+  header .login-link {
+    background-color: #3897f0;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  header .login-link:hover {
+    background-color: #0066cc;
+  }
+  
+  /* Instagram Feed Section */
+  main {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 30px;
+    padding: 0 20px;
+  }
+  
+  .content {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+  }
+  
+  .feed {
+    width: 70%;
+  }
+  
+  .sidebar {
+    width: 28%;
+    background-color: #ffffff;
+    border: 1px solid #dbdbdb;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  /* Login Page Styles */
+  .login-container {
+    width: 100%;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .login-box {
+    width: 100%;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #dbdbdb;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .logo {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 36px;
+    color: #3897f0;
+    margin-bottom: 20px;
+  }
+  
+  .login-box input[type="text"],
+  .login-box input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #dbdbdb;
+    border-radius: 8px;
+    background-color: #fafafa;
+    outline: none;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .login-box button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #3897f0;
+    color: #ffffff;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+  }
+  
+  .login-box button[type="submit"]:hover {
+    background-color: #0066cc;
+  }
+  
+  .fb-login {
+    width: 100%;
+    padding: 12px;
+    background-color: #385185;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 16px;
+  }
+  
+  .fb-login:hover {
+    background-color: #2d3b58;
+  }
+  
+  .separator {
+    position: relative;
+    margin: 15px 0;
+    font-size: 14px;
+    color: #8e8e8e;
+  }
+  
+  .separator::before,
+  .separator::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 40%;
+    height: 1px;
+    background-color: #dbdbdb;
+  }
+  
+  .separator::before {
+    left: 0;
+  }
+  
+  .separator::after {
+    right: 0;
+  }
+  
+  .forgot-password {
+    font-size: 12px;
+    color: #3897f0;
+    display: block;
+    margin-top: 15px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .forgot-password:hover {
+    color: #0066cc;
+  }
+  
+  .signup-box {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .signup-box a {
+    color: #3897f0;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .signup-box a:hover {
+    color: #0066cc;
+  }
+  
+  /* Responsive Styles for Mobile */
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    header .logo {
+      font-size: 25px;
+      margin-bottom: 10px;
+    }
+  
+    header .nav-icons {
+      display: none;
+    }
+  
+    .content {
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 20px;
+    }
+  
+    .feed {
+      width: 100%;
+    }
+  
+    .sidebar {
+      display: none;
+    }
+  
+    .login-container {
+      padding: 20px;
+      margin-top: 10px;
+    }
+  
+    .login-box {
+      padding: 25px;
+    }
+  
+    .login-box input[type="text"],
+    .login-box input[type="password"],
+    .login-box button[type="submit"] {
+      font-size: 15px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .login-box {
+      padding: 20px;
+      width: 90%;
+    }
+  }
+  

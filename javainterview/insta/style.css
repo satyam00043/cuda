@@ -1,0 +1,292 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #fafafa;
+  }
+  
+  /* Header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #dbdbdb;
+  }
+  
+  header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #3897f0;
+  }
+  
+  header input[type="text"] {
+    padding: 5px;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    width: 180px;
+  }
+  
+  header .nav-icons i {
+    font-size: 24px;
+    margin-left: 15px;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  /* Responsive layout for mobile */
+  @media (max-width: 600px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    header .logo {
+      margin-bottom: 10px;
+    }
+  
+    header input[type="text"] {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    .content {
+      flex-direction: column;
+    }
+  
+    .sidebar {
+      margin-top: 20px;
+    }
+  }
+  
+  /* Main Content */
+  .content {
+    display: flex;
+    max-width: 1000px;
+    margin: 20px auto;
+  }
+  
+  .feed {
+    flex: 2;
+    margin-right: 20px;
+  }
+  
+  .post {
+    background-color: #ffffff;
+    border: 1px solid #dbdbdb;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .post-header {
+    display: flex;
+    align-items: center;
+  }
+  
+  .post-header img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .post-video {
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 5px;
+  }
+  
+  .post-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    color: #3897f0;
+  }
+  
+  .sidebar {
+    flex: 1;
+  }
+  
+  .stories, .music-player, .chatbot {
+    background-color: #ffffff;
+    padding: 10px;
+    border: 1px solid #dbdbdb;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .story, .suggestion {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .story img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .chatbot #chatbox {
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+    max-height: 150px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+  }
+  
+  .chatbot #userInput {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #dbdbdb;
+  }
+  
+  .chatbot button {
+    margin-top: 5px;
+    padding: 5px 10px;
+    background-color: #3897f0;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #57ab11;
+  }
+  
+  /* Header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #dbdbdb;
+  }
+  
+  header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #3897f0;
+  }
+  
+  header input[type="text"] {
+    padding: 5px;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    width: 200px;
+  }
+  
+  header .nav-icons i {
+    font-size: 24px;
+    margin-left: 15px;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  /* Main Content */
+  .content {
+    display: flex;
+    max-width: 1000px;
+    margin: 20px auto;
+  }
+  
+  .feed {
+    flex: 2;
+    margin-right: 20px;
+  }
+  
+  .post {
+    background-color: #ffffff;
+    border: 1px solid #dbdbdb;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .post-header {
+    display: flex;
+    align-items: center;
+  }
+  
+  .post-header img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .post-image, .post-video {
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 5px;
+  }
+  
+  .post-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    color: #3897f0;
+  }
+  
+  .sidebar {
+    flex: 1;
+  }
+  
+  .stories, .suggestions, .music-player {
+    background-color: #ffffff;
+    padding: 10px;
+    border: 1px solid #dbdbdb;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .story, .suggestion {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .story img, .suggestion img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .suggestion button {
+    margin-left: auto;
+    padding: 5px 10px;
+    border: none;
+    background-color: #3897f0;
+    color: rgb(202, 73, 73);
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .music-player audio {
+    width: 100%;
+    margin-top: 10px;
+  }
+  

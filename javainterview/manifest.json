@@ -1,0 +1,26 @@
+{
+    "manifest_version": 3,
+    "name": "My Schedule Extension",
+    "description": "A simple scheduling tool for your day.",
+    "version": "1.0",
+    "permissions": [
+      "storage"
+    ],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "icon/schedule.png",
+        "48": "icon/schedule.png",
+        "128": "icon/schedule.png"
+      }
+    },
+    "background": {
+      "service_worker": "background.js"
+    },
+    "icons": {
+      "16": "icon/schedule.png",
+      "48": "icon/schedule.png",
+      "128": "icon/schedule.png"
+    }
+  }
+  

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagram Front Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="logo">Instagram</div>
+    <input type="text" placeholder="Search">
+    <div class="nav-icons">
+      <i class="icon home">🏠</i>
+      <i class="icon messages">💬</i>
+      <i class="icon explore">🔍</i>
+      <i class="icon notifications">❤️</i>
+      <i class="icon profile">👤</i>
+    </div>
+    <a href="login.html" class="login-link">Log In</a>
+  </header>
+
+  <!-- Main Content Section -->
+  <main>
+    <div class="content">
+      <!-- Posts Feed -->
+      <section class="feed">
+        <div class="post">
+          <div class="post-header">
+            <img src="profile1.jpg" alt="Profile Picture">
+            <span>user1</span>
+          </div>
+          <video controls class="post-video">
+            <source src="video1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <div class="post-actions">
+            <i>❤️</i>
+            <i>💬</i>
+            <i>🔁</i>
+          </div>
+          <p><strong>user1</strong> Enjoying a beautiful day!</p>
+        </div>
+      </section>
+
+      <!-- Sidebar for Stories, Suggestions, Music, and Chatbot -->
+      <aside class="sidebar">
+        <!-- Stories -->
+        <section class="stories">
+          <h3>Stories</h3>
+          <div class="story"><img src="profile3.jpg" alt="Profile"> user3</div>
+          <div class="story"><img src="profile4.jpg" alt="Profile"> user4</div>
+          <div class="story"><img src="profile5.jpg" alt="Profile"> user5</div>
+        </section>
+
+        <!-- Music Player -->
+        <section class="music-player">
+          <h3>Now Playing</h3>
+          <audio controls>
+            <source src="music.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+          </audio>
+        </section>
+
+        <!-- Chatbot -->
+        <section class="chatbot">
+          <h3>Need Help?</h3>
+          <div id="chatbox">
+            <div class="bot-message">Hello! How can I help you today?</div>
+          </div>
+          <input type="text" id="userInput" placeholder="Type a message...">
+          <button onclick="sendMessage()">Send</button>
+        </section>
+      </aside>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
